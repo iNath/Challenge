@@ -1,8 +1,13 @@
 package ups.ter.challenge;
 
+import java.io.File;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -14,6 +19,10 @@ public class Home extends Activity {
 	Button About;
 	Button Quitter;
 
+
+	private Uri imageUri;
+	private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,12 +43,20 @@ public class Home extends Activity {
 
 	private OnClickListener takepictureEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
-			Intent intent = new Intent(Home.this, TakePicture.class);
-			startActivity(intent);
-
+			takePhoto(arg0);
 		}
 	};
 
+
+	public void takePhoto(View view) {
+		Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+		File photo = new File(Environment.getExternalStorageDirectory(),
+				"Pic.jpg");
+		intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(photo));
+		imageUri = Uri.fromFile(photo);
+		startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
+	}
+	
 	private OnClickListener GoToEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			Intent intent = new Intent(Home.this, GoTo.class);

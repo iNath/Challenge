@@ -20,13 +20,13 @@ import android.widget.Toast;
 
 public class TakePicture extends Activity {
 
-	private Uri imageUri;
-	private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
-
+	//private Uri imageUri;
+//	private static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 100;
+/*
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.take_picture);
+	//	setContentView(R.layout.take_picture);
 
 		Button takePhoto = (Button) findViewById(R.id.take_photo);
 		takePhoto.setOnClickListener(new OnClickListener() {
@@ -35,9 +35,8 @@ public class TakePicture extends Activity {
 				takePhoto(v);
 			}
 		});
-
-	}
-
+	}*/
+/*
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
@@ -55,10 +54,10 @@ public class TakePicture extends Activity {
 							.getBitmap(cr, selectedImage);
 					imageView.setImageBitmap(bitmap);
 
-					/*
-					 * Button Quitter = (Button) findViewById(R.id.tohome);
-					 * Quitter.setOnClickListener(GotoHome);
-					 */
+					
+					 Button Quitter = (Button) findViewById(R.id.tohome);
+					 Quitter.setOnClickListener(GotoHome);
+					 
 					// Affichage de l'infobulle
 					Toast.makeText(this, selectedImage.toString(),
 							Toast.LENGTH_LONG).show();
@@ -85,7 +84,7 @@ public class TakePicture extends Activity {
 		imageUri = Uri.fromFile(photo);
 		startActivityForResult(intent, CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE);
 	}
-
+*/
 	/*
 	 * private OnClickListener GotoHome = new OnClickListener() { public void
 	 * onClick(View arg0) { Intent intent = new Intent(TakePicture.this,
