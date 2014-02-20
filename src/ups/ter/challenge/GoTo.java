@@ -1,5 +1,8 @@
 package ups.ter.challenge;
 
-public class GoTo {
+import android.app.Activity;
 
+public class GoTo extends Activity {
+
+	
 }
