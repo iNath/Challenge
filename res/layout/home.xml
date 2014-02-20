@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:drawableLeft="@drawable/take_pic"
+            android:drawableLeft="@drawable/camera64"
             android:layout_marginTop="128dp"
             android:text="Take Picture" />
          
@@ -26,7 +26,7 @@
             android:layout_alignLeft="@+id/button1"
             android:layout_alignRight="@+id/button1"
             android:layout_centerVertical="true"
-            android:drawableLeft="@drawable/go_to"
+            android:drawableLeft="@drawable/goto64"
             android:text="Go To" /> 
         
         <Button
@@ -36,7 +36,7 @@
             android:layout_alignLeft="@+id/button3"
             android:layout_alignRight="@+id/button3"
             android:layout_below="@+id/button3"
-            android:drawableLeft="@drawable/exit"
+            android:drawableLeft="@drawable/exit64"
             android:text=" Exit" />
         
         <TextView
