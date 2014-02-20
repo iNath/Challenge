@@ -24,8 +24,8 @@ public class Home extends Activity {
 		GoTo = (Button) findViewById(R.id.button2);
 		GoTo.setOnClickListener(GoToEcouteur);
 		
-		About = (Button) findViewById(R.id.button3);
-		About.setOnClickListener(AboutEcouteur);
+	/*	About = (Button) findViewById(R.id.button3);
+		About.setOnClickListener(AboutEcouteur);*/
 		
 		Quitter = (Button) findViewById(R.id.button4);
 		Quitter.setOnClickListener(QuitterEcouteur);
@@ -48,14 +48,14 @@ public class Home extends Activity {
 		}
 	};
 
-	private OnClickListener AboutEcouteur = new OnClickListener() {
+	/*private OnClickListener AboutEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			Intent intent = new Intent(Home.this, About.class);
 			startActivity(intent);
 
 		}
 	};
-
+*/
 	private OnClickListener QuitterEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			System.exit(RESULT_OK);

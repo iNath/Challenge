@@ -18,24 +18,24 @@
             android:layout_marginTop="128dp"
             android:text="Take Picture" />
          
-          <Button
+                
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Go To" />
+        
+   <!--      <Button
               android:id="@+id/button3"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_below="@+id/button2"
               android:layout_centerHorizontal="true"
               android:layout_marginTop="62dp"
-              android:text="About" />
-
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="52dp"
-            android:text="Préparer vous pour dancer " />
-
+              android:text="About" /> -->
+        
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
@@ -44,13 +44,16 @@
             android:layout_centerHorizontal="true"
             android:text="Quitter" />
 
-        <Button
-            android:id="@+id/button2"
+        
+        <TextView
+            android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="Go To" />
-
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp"
+            android:text="Préparer vous pour dancer " />
+        
     </RelativeLayout>
 
 </LinearLayout>
