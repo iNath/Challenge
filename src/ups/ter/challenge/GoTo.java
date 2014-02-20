@@ -192,5 +192,4 @@ public class GoTo extends Activity implements LocationListener {
 		return (float) (dist * meterConversion);
 	}
 	
-
 }
