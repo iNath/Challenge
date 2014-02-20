@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class Home extends Activity {
 
@@ -21,13 +20,13 @@ public class Home extends Activity {
 		setContentView(R.layout.home);
 		takepicture = (Button) findViewById(R.id.button1);
 		takepicture.setOnClickListener(takepictureEcouteur);
-		
+
 		GoTo = (Button) findViewById(R.id.button2);
 		GoTo.setOnClickListener(GoToEcouteur);
-		
-	/*	About = (Button) findViewById(R.id.button3);
-		About.setOnClickListener(AboutEcouteur);*/
-		
+
+		About = (Button) findViewById(R.id.button3);
+		About.setOnClickListener(AboutEcouteur);
+
 		Quitter = (Button) findViewById(R.id.button4);
 		Quitter.setOnClickListener(QuitterEcouteur);
 
@@ -40,7 +39,7 @@ public class Home extends Activity {
 
 		}
 	};
-	
+
 	private OnClickListener GoToEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			Intent intent = new Intent(Home.this, GoTo.class);
@@ -49,14 +48,14 @@ public class Home extends Activity {
 		}
 	};
 
-	/*private OnClickListener AboutEcouteur = new OnClickListener() {
+	private OnClickListener AboutEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			Intent intent = new Intent(Home.this, About.class);
 			startActivity(intent);
 
 		}
 	};
-*/
+
 	private OnClickListener QuitterEcouteur = new OnClickListener() {
 		public void onClick(View arg0) {
 			System.exit(RESULT_OK);
